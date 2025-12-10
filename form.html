@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>veterinary care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/StyleSheet1.css">
+    <script src="validation_form.js"></script> <!-- Link JavaScript to HTML -->
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h2>welcome to Cairnsville Veterinary Care</h2>
+            <a href="index.html"><img src="images/3.jpg" alt="back to homepage" height="200" width="200"></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li> &nbsp;
+                <li><a href="services.html">services</a></li> &nbsp;
+                <li><a href="staff.html">staff</a></li> &nbsp;
+                <li><a href="contact.html">contact</a></li> &nbsp;
+            </ul>
+        </nav>
+
+        <main>
+            <div id="form">
+                <h2>please provide your information</h2>
+                <form class="form-grid" name="validation_Form" action="submitted.html" onsubmit="return validate_Form()">
+                    
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName">
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                        <label for="address">address:</label>
+                        <input type="text" name="address" id="address">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Medical Service</legend>
+                        <p>what type of service do you want us to provide with?</p>
+                        <label for="Physical_Examination"><input type="checkbox" name="interest" id="pe" value="Physical Examination">Physical Examination</label>
+                        <label for="Vaccinations"><input type="checkbox" name="interest" id="va" value="Vaccinations">Vaccinations</label>
+                        <label for="Parasite_Control"><input type="checkbox" name="interest" id="pc" value="Parasite Control">Parasite Control</label>
+                        <label for="Dental_Check-Up"><input type="checkbox" name="interest" id="dc" value="Dental_Check_Up">Dental Check-Up</label>
+                        <label for="Blood_Tests_or_Laboratory_Work"><input type="checkbox" name="interest" id="bt" value="Blood_Tests_or_Laboratory_Work">Blood Tests or Laboratory Work</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Referral Source</legend>
+                        <label for="reference">How did you find us?</label>
+                        <select name="reference" id="reference">
+                            <option value="ad">Advertisement</option>
+                            <option value="friend">Friend</option>
+                            <option value="google">Google</option>
+                            <option value="social">Social Media</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <div id="any_question">
+                            <label for="questions"> If you have any question please input here</label>
+                            <textarea id="questions" name="questions" rows="15" cols="35"></textarea>
+                        </div>
+                        
+                    </fieldset>
+                    <input type="submit" id="submit" value="Submit" class="btn">
+
+
+                </form>
+
+            </div>
+        </main>
+    </div>
+    <footer>
+        <br>
+        <p>&copy;Copyright 2024. All Rights reversed.</p>
+        <p><a href="index.html">Cairnsville Veterinary Care</a></p>
+    </footer>
+</body>
+
+</html>
